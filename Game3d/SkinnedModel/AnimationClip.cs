@@ -33,14 +33,6 @@ namespace SkinnedModel
 
 
         /// <summary>
-        /// Private constructor for use by the XNB deserializer.
-        /// </summary>
-        private AnimationClip()
-        {
-        }
-
-
-        /// <summary>
         /// Gets the total length of the animation.
         /// </summary>
         [ContentSerializer]

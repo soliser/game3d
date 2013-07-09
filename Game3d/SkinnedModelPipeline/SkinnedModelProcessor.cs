@@ -61,11 +61,11 @@ namespace SkinnedModelPipeline
                     bones.Count, MaxBones));
             }
 
-            List<Matrix> bindPose = new List<Matrix>();
-            List<Matrix> inverseBindPose = new List<Matrix>();
-            List<int> skeletonHierarchy = new List<int>();
+            var bindPose = new List<Matrix>();
+            var inverseBindPose = new List<Matrix>();
+            var skeletonHierarchy = new List<int>();
 
-            foreach (BoneContent bone in bones)
+            foreach (var bone in bones)
             {
                 bindPose.Add(bone.Transform);
                 inverseBindPose.Add(Matrix.Invert(bone.AbsoluteTransform));
@@ -73,8 +73,7 @@ namespace SkinnedModelPipeline
             }
 
             // Convert animation data to our runtime format.
-            Dictionary<string, AnimationClip> animationClips;
-            animationClips = ProcessAnimations(skeleton.Animations, bones);
+            Dictionary<string, AnimationClip> animationClips = ProcessAnimations(skeleton.Animations, bones);
 
             // Chain to the base ModelProcessor class so it can convert the model data.
             ModelContent model = base.Process(input, context);

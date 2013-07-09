@@ -64,11 +64,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Solist\Desktop\SkinningSample\SkinnedModelPipeline\SkinnedModelPipeline.csproj">
+    <ProjectReference Include="..\..\SkinnedModelPipeline\SkinnedModelPipeline.csproj">
       <Project>{007DFB20-8DAF-4088-BB0A-C5EB0282E679}</Project>
       <Name>SkinnedModelPipeline</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Solist\Desktop\SkinningSample\SkinnedModel\SkinnedModelWindows.csproj">
+    <ProjectReference Include="..\..\SkinnedModel\SkinnedModelWindows.csproj">
       <Project>{0D41E29B-829F-4255-BCA5-64DC2677DA6D}</Project>
       <Name>SkinnedModelWindows</Name>
     </ProjectReference>
